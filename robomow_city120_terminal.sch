@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6556,7 +6556,7 @@ Source: AVX .. aphvc.pdf</description>
 <label x="106.68" y="43.18" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="TX_R" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="J1" gate="G$1" pin="5"/>
@@ -6569,7 +6569,7 @@ Source: AVX .. aphvc.pdf</description>
 <junction x="73.66" y="43.18"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="RX_R" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="50.8" x2="60.96" y2="50.8" width="0.1524" layer="91"/>
