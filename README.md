@@ -1,10 +1,12 @@
+# General parameters
 19200 baud 8n1
 
 Robot seems to be the master
 
 Checksum: sum all bytes then negate
 
-Terminal sends periodically:
+# Packets
+Terminal sends the following packets periodically (with varying -depending on the traffic from the robot- rate between 10-60ms). I never saw traffic on the TX and RX at the same time (the terminal and the robot seems to be handshaking on the bus).
 
 Idle:     0x23 0x00 0x18 0xC4
 
@@ -30,7 +32,7 @@ Up:       0x23 0x01 0x18 0xC3
 
 Down:     0x23 0x02 0x18 0xC2
 
-
+# Newer models
 RS/RC/RX packet format:
 
 170 (API preamble)
