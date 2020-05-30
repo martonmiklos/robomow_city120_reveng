@@ -1,0 +1,6 @@
+[submodule "robomow_tester/qtserialportwidgets"]
+	path = robomow_tester/qtserialportwidgets
+	url = git@github.com:martonmiklos/qtserialportwidgets.git
+[submodule "robomow_tester/qtcsv"]
+	path = robomow_tester/qtcsv
+	url = git@github.com:martonmiklos/qtcsv.git
