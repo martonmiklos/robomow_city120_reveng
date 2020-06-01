@@ -28,9 +28,9 @@ public:
     RobomowRL_MessageDecoder &operator<<(quint8 data);
 private:
     QMap<MessageType, int> m_msgTypeSizes;
-    MsgProcessState state = Idle;
+    MsgProcessState m_messageState = Idle;
     MessageType msgCode = Unknown;
-    QByteArray dataBuffer;
+    QByteArray m_dataBuffer;
 };
 
 #endif // ROBOMOWRL_MESSAGEDECODER_H

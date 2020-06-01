@@ -25,6 +25,10 @@ private slots:
 
     void on_pushButtonDecodeSaleaeLog_clicked();
 
+    void on_pushButton_2_clicked();
+
+    void on_pushButton_3_clicked();
+
 private:
     Ui::MainWindow *ui;
     QSerialPort m_port;

@@ -30,6 +30,7 @@ void MainWindow::on_pushButtonOpenPort_clicked(bool checked)
         m_port.setDataBits(QSerialPort::Data8);
         m_port.setParity(QSerialPort::NoParity);
         m_port.setStopBits(QSerialPort::OneStop);
+        m_port.open(QSerialPort::ReadWrite);
         if (!m_port.isOpen()) {
             ui->pushButtonOpenPort->setChecked(false);
             return;
@@ -53,7 +54,7 @@ void MainWindow::on_pushButtonDecodeSaleaeLog_clicked()
         m_settings.setValue("lastSaleaeCSVPath", csvPath);
         QtCSV::Reader reader;
         QList<QStringList> data = reader.readToList(csvPath);
-        //qWarning() << data;
+        qWarning() << data;
         QByteArray dataBuffer;
 
         for (auto lineData : data) {
@@ -67,4 +68,31 @@ void MainWindow::on_pushButtonDecodeSaleaeLog_clicked()
             }
         }
     }
+}
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    /*
+     * AA 07 14 03 00 00 37 <- during sensor poll it is rarely sent
+     * AA 07 14 01 00 00 39 <- continous polling */
+
+    QByteArray data;
+    data.append(0xAA);
+    data.append(0x07);
+    data.append(0x14);
+    data.append(0x01);
+    data.append((quint8)0x00);
+    data.append((quint8)0x00);
+    data.append(0x39);
+    m_port.write(data);
+}
+
+void MainWindow::on_pushButton_3_clicked()
+{
+    QByteArray data;
+    data.append(0x23);
+    data.append((quint8)0x00);
+    data.append((quint8)0x18);
+    data.append(0xC4);
+    m_port.write(data);
 }

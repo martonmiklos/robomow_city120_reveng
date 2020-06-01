@@ -1,16 +1,17 @@
-#include "robomowrl_messagedecoder.h"
+#include "robomow_rl_messagedecoder.h"
 
 #include <QDebug>
 
 RobomowRL_MessageDecoder::RobomowRL_MessageDecoder()
 {
+    m_msgTypeSizes[Unknown] = 4;
     m_msgTypeSizes[LCDContent] = 36;
     m_msgTypeSizes[Unknown_2] = 13;
     m_msgTypeSizes[Empty_5] = 4;
     m_msgTypeSizes[Empty_6] = 5;
 }
 
-RobomowRL_MessageDecoder RobomowRL_MessageDecoder::operator<<(quint8 data)
+RobomowRL_MessageDecoder& RobomowRL_MessageDecoder::operator<<(quint8 data)
 {
     m_dataBuffer.append((char)data);
     if (m_messageState == Idle && m_dataBuffer.count() > 1) {
