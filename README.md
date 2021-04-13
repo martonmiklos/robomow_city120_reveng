@@ -1,10 +1,10 @@
-# General parameters of the RL-2000 (City 120) communication
+# General parameters of the Robomow RL-2000 (City 120) robot - user terminal communication
  * 0-5V levels between the PIC in the terminal and the H8S/2000 in the robot
  * 19200 baud 8n1 inverted (UART idles at low)
  * Robot seems to be the master
  * Checksum: sum all bytes then negate
  
-# Terminal ackets
+# Terminal response packets
 Terminal sends the following packets periodically (with varying -depending on the traffic from the robot- rate between 10-60ms). 
 I never saw traffic on the TX and RX at the same time (the terminal and the robot seems to be handshaking on the bus).
 
@@ -20,6 +20,10 @@ I never saw traffic on the TX and RX at the same time (the terminal and the robo
 * Factory:  0x23 0x00 0x1C 0xC0
 * Up:       0x23 0x01 0x18 0xC3
 * Down:     0x23 0x02 0x18 0xC2
+
+# Firmware reversing info
+
+Both UART0 and UART1 seems to be initialized and used. (Maybe there is a service port?)
 
 # Newer models protocol info
 RS/RC/RX packet format:
