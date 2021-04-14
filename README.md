@@ -23,7 +23,18 @@ I never saw traffic on the TX and RX at the same time (the terminal and the robo
 
 # Firmware reversing info
 
-Both UART0 and UART1 seems to be initialized and used. (Maybe there is a service port?)
+## UART 
+Both UART0 and UART1 seems to be initialized and used.
+
+UART0 has 31 byte RX buffer, UART1 has 15 
+
+UART1 initialized to 4800 baud (F_CPU == 16M, BRR1 == 103)
+
+Both UART reception handled with RX ISR.
+
+## Memory 
+I did not noted the external RAM IC type, but it looks that 64 KByte RAM is mapped between 0x00220000 to 0x0022FFFF (SP initialized to 0x0022FFF0)
+
 
 # Newer models protocol info
 RS/RC/RX packet format:
