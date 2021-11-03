@@ -2,6 +2,7 @@
  * 0-5V levels between the PIC in the terminal and the H8S/2000 in the robot
  * 19200 baud 8n1 inverted (UART idles at low)
  * Checksum: sum all bytes then negate
+ * For RJ11 pinout see the [revenged schematics](https://github.com/martonmiklos/robomow_city120_reveng/blob/master/robomow_city120_terminal.sch)
  
 # Terminal response packets
 Terminal sends the following packets periodically (with varying -depending on the traffic from the robot- rate between 10-60ms). 
