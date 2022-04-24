@@ -2,6 +2,7 @@
  * 0-5V levels between the PIC in the terminal and the H8S/2000 in the robot
  * 19200 baud 8n1 inverted (UART idles at low)
  * Checksum: sum all bytes then negate
+ * For RJ11 pinout see the [revenged schematics](https://github.com/martonmiklos/robomow_city120_reveng/blob/master/robomow_city120_terminal.sch)
  
  J105 pinout:
  RX1: 4
@@ -22,7 +23,7 @@ I never saw traffic on the TX and RX at the same time (the terminal and the robo
 * Right:    0x23 0x20 0x18 0xA4
 * Rabbit:   0x23 0x00 0x19 0xC3
 * C:        0x23 0x08 0x18 0xBC
-* Go:       0x23 0x80 0x18 0x44
+* Go:       0x23 0x04 0x18 0x44
 * Stop:     0x23 0x00 0x1A 0xC2
 * Factory:  0x23 0x00 0x1C 0xC0
 * Up:       0x23 0x01 0x18 0xC3
@@ -67,7 +68,7 @@ UART1 (debug?) initialized to 4800 baud (F_CPU == 16M, BRR1 == 103), the baud ra
 
 Both UART reception handled with RX ISR.
 
-The UART1 looks to have simpler protocol, and it might be involved in Bootloader activites (it ends in one case using a "DownLoad..." string).
+The UART1 looks to have simpler protocol, and it might be involved in bootloader/flashing/config upload activites (it ends in one case using a "DownLoad..." string).
 
 
 UART1 (debug?) frames (only 8 byte is handled).
