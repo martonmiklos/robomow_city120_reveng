@@ -12,6 +12,7 @@
  GND: 8
  
 # Terminal response packets
+
 Terminal sends the following packets periodically (with varying -depending on the traffic from the robot- rate between 10-60ms). 
 I never saw traffic on the TX and RX at the same time (the terminal and the robot seems to be handshaking on the bus).
 
@@ -32,6 +33,11 @@ I never saw traffic on the TX and RX at the same time (the terminal and the robo
 
 # HW reverse engineering info
 
+I currently have the following boards:
+* ESB0019B04 - broken
+* ESB0050D - broken
+* ESB0100D - likely new
+
 ## H8S MCU mode strapping
 
 Strapped to Mode 5
@@ -40,11 +46,17 @@ Strapped to Mode 5
 - MD2 VCC
 
 ## I2C EEPROM
+
 SDA - P53
 SCL - P52
 
 ## External RAM
+
 64KByte
+
+## Current limit on motors
+
+Shunts wired to LM393-s which output is read via 74HC153 muxes, mapping of them is TBD
 
 # Firmware reversing info
 
@@ -59,18 +71,41 @@ The contents of the external RAM is initialized from the flash in multiple porti
 - ROM 0x01007E-0x0101F2 copied to RAM 0x221140-0x2212B4 (372 byte)
 - ROM 0x010570-0x0113A8 copied to RAM 0x2212B4-0x2220EC (3640 byte)
 
-## UART 
-Both UART0 (connected to the terminal) and UART1 (debug?) seems to be initialized and used.
+## UART 0
 
-UART0 (terminal) has 31 byte RX buffer, UART1 (debug?) has 15 byte buffer
+UART0 is connected to the terminal, has 31 byte RX buffer
 
-UART1 (debug?) initialized to 4800 baud (F_CPU == 16M, BRR1 == 103), the baud rate is adjustable with some commands.
+### UART 1
 
-Both UART reception handled with RX ISR.
+The UART1 is initialized to 4800 baud (F_CPU == 16M, BRR1 == 103), the baud rate is adjustable with some commands.
+
+Physically this UART is wired to this connector:
+
+![RnD UART](imgs/rnd_uart1.png)
 
 The UART1 looks to have simpler protocol, and it might be involved in bootloader/flashing/config upload activites (it ends in one case using a "DownLoad..." string).
 
+### UART1 protocol info
 
-UART1 (debug?) frames (only 8 byte is handled).
+The following info gathere by analyzing the 4.33 City-120 firmware in IDA.
 
+Never tested it due ot the danger insisted by the DownLoad string.
+
+0. byte: 
+    if 0xAA - process the 6. byte
+    if 0x83, 0x87, 0x89 - next byte needs to be 'm'
+    if 0xC4 - process the 3. byte
+    if 0x68 - (ascii 'h') the activates some sort of 
+1. byte: if not 'm' (0x6D) then reset processing for 0x83, 0x87, 0x89
+2. byte
+    if 0x83, 0x87 then proceeds to some section leading to a DownLoad string.
+3. byte
+    if 0xC5 - follows processing
+    else - resets packet processing
+4. byte
+    if 0xC7 - perform BIST
+5. byte
+    itt meghívódik egy komolyabb függvény
+6. byte
+    eltároljuk -> 7.re
 
