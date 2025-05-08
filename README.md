@@ -66,6 +66,13 @@ Shunts wired to LM393-s which output is read via 74HC153 muxes, mapping of them 
 2K on chip RAM present between 0xFFF400 to 0xFFFC00
 
 ### External RAM
+
+128K x 8
+
+- ESB0019B04 - V62C5181024LL-35W
+- ESB0050D Samsung K6X1008C2D-BF-55
+- ESB0100D Cypress CY62128LL
+
 The contents of the external RAM is initialized from the flash in multiple portions
 
 - ROM 0x01007E-0x0101F2 copied to RAM 0x221140-0x2212B4 (372 byte)
