@@ -2,7 +2,7 @@
  * 0-5V levels between the PIC in the terminal and the H8S/2000 in the robot
  * 19200 baud 8n1 inverted (UART idles at low)
  * Checksum: sum all bytes then negate
- * For RJ11 pinout see the [revenged schematics](https://github.com/martonmiklos/robomow_city120_reveng/blob/master/robomow_city120_terminal.sch)
+ * For RJ12 pinout see the [revenged schematics](https://github.com/martonmiklos/robomow_city120_reveng/blob/master/robomow_city120_terminal.sch)
  
  J105 pinout:
  RX1: 4

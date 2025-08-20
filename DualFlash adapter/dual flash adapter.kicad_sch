@@ -5992,94 +5992,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x08")
-		(at 100.33 118.745 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "01429790-e607-4ff0-9ca6-952fe39e67a7")
-		(property "Reference" "J4"
-			(at 103.505 118.7451 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x08"
-			(at 103.505 116.2051 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x08_P1.27mm_Vertical"
-			(at 100.33 118.745 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 100.33 118.745 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 100.33 118.745 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "73e8ea04-55b3-4cc3-b8d7-79f1a70ccd6a")
-		)
-		(pin "6"
-			(uuid "27ca03d2-cf17-40bc-bdb8-4ddb0f8ff37e")
-		)
-		(pin "1"
-			(uuid "d29b932c-9b17-4191-bd26-35bf9edb8e11")
-		)
-		(pin "4"
-			(uuid "900d2501-778f-4edd-a71e-d9d1510346cf")
-		)
-		(pin "3"
-			(uuid "b6f38c70-5713-4291-a93a-09c0212a83cf")
-		)
-		(pin "8"
-			(uuid "1b87bf04-a311-4719-b600-a644f0a23316")
-		)
-		(pin "7"
-			(uuid "9cc5965d-2acc-4b68-a0c5-233c589edbff")
-		)
-		(pin "2"
-			(uuid "1ec01f52-0707-4c3d-83c8-6e97a792d4fd")
-		)
-		(instances
-			(project "dual flash adapter"
-				(path "/4778f287-7992-461b-b399-46e2f12f950a"
-					(reference "J4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 99.695 137.16 0)
 		(unit 1)
@@ -6147,16 +6059,16 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x08")
-		(at 66.675 147.32 90)
-		(mirror x)
+		(at 38.1 110.49 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "0c3269e6-f104-4300-898a-b7dd0a8160d8")
-		(property "Reference" "J2"
-			(at 67.945 151.13 90)
+		(uuid "0f35f580-43d9-47a3-b1ef-82cf65de2692")
+		(property "Reference" "J1"
+			(at 38.1 126.365 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6164,7 +6076,7 @@
 			)
 		)
 		(property "Value" "Conn_01x08"
-			(at 67.945 153.67 90)
+			(at 38.1 123.825 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6172,7 +6084,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x08_P1.27mm_Vertical"
-			(at 66.675 147.32 0)
+			(at 38.1 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6181,7 +6093,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 66.675 147.32 0)
+			(at 38.1 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6190,7 +6102,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 66.675 147.32 0)
+			(at 38.1 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6199,33 +6111,33 @@
 			)
 		)
 		(pin "5"
-			(uuid "c662448d-005b-474c-ba42-c77d04be2f42")
+			(uuid "0b43f686-1830-4bb8-90ca-f9ba987bf8d0")
 		)
 		(pin "6"
-			(uuid "a0f51e10-a721-4b47-a515-13b0aaaeb423")
+			(uuid "4d5e2d0b-85bd-4991-a76a-5dbf8550c4eb")
 		)
 		(pin "1"
-			(uuid "36719a3a-7dfd-429c-8f20-f364d130f19d")
+			(uuid "dd49411a-d799-4807-a6f2-f91cd4b5c1db")
 		)
 		(pin "4"
-			(uuid "47d09d0d-a6b7-415c-ae02-ba7d28436ee8")
+			(uuid "18981f03-8abe-4840-ac47-357e4e9aacce")
 		)
 		(pin "3"
-			(uuid "6340dbc9-cc2a-40ab-b438-a540ba41700a")
+			(uuid "87b6a774-98f8-4fdd-ab1f-ee249109672f")
 		)
 		(pin "8"
-			(uuid "7d332de8-cfd1-46dc-aa3f-4ab4bd1fddb2")
+			(uuid "4d0cc1a4-df29-4346-86ce-4984be812266")
 		)
 		(pin "7"
-			(uuid "9e922bfb-dfbc-4702-bbee-7e6c2d378644")
+			(uuid "ac5d9b77-9cce-4ce8-99bc-4349ad8e1142")
 		)
 		(pin "2"
-			(uuid "faffc219-8942-4baa-8db3-281edf5c6cb9")
+			(uuid "e150d673-3b40-43a4-9b3f-0681110c5d19")
 		)
 		(instances
 			(project "dual flash adapter"
 				(path "/4778f287-7992-461b-b399-46e2f12f950a"
-					(reference "J2")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -6296,6 +6208,92 @@
 			(project "dual flash adapter"
 				(path "/4778f287-7992-461b-b399-46e2f12f950a"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x08")
+		(at 67.945 81.915 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "28addb78-80a4-45f2-9ac5-08b2085ffdf4")
+		(property "Reference" "J3"
+			(at 66.675 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x08"
+			(at 66.675 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x08_P1.27mm_Vertical"
+			(at 67.945 81.915 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 67.945 81.915 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 67.945 81.915 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "f92f6bb7-58b0-48f1-8aba-eba65b5d5f3f")
+		)
+		(pin "6"
+			(uuid "ae2afbc5-4e35-4eff-a95f-8e4fed9f5100")
+		)
+		(pin "1"
+			(uuid "cfebfa0d-07d9-46f0-a886-f6e9a1a17eba")
+		)
+		(pin "4"
+			(uuid "08217605-481d-4a3b-a7f0-f9e78acdff61")
+		)
+		(pin "3"
+			(uuid "0e5dc807-b699-49de-a038-48d64d45d41f")
+		)
+		(pin "8"
+			(uuid "30f7f451-1c46-4e7a-b5ac-201fa71a671f")
+		)
+		(pin "7"
+			(uuid "fb9efa12-1ace-412d-a850-036fc7e054fa")
+		)
+		(pin "2"
+			(uuid "b54823b2-9768-4ca9-97d8-6d6ecd05dec1")
+		)
+		(instances
+			(project "dual flash adapter"
+				(path "/4778f287-7992-461b-b399-46e2f12f950a"
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -6858,92 +6856,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x08")
-		(at 38.1 110.49 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4e12931b-4f29-43d3-b7ea-7756784ea739")
-		(property "Reference" "J1"
-			(at 38.1 126.365 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x08"
-			(at 38.1 123.825 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x08_P1.27mm_Vertical"
-			(at 38.1 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 38.1 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 38.1 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "d3284c3d-752f-4133-9ab1-0d57d570278e")
-		)
-		(pin "6"
-			(uuid "8f668d1b-935d-4ee1-85f9-492e62fb3624")
-		)
-		(pin "1"
-			(uuid "9da2e5be-daac-4967-acb4-1e054d7b02e6")
-		)
-		(pin "4"
-			(uuid "95eb27f3-ad47-486f-9495-38d8d1878a83")
-		)
-		(pin "3"
-			(uuid "ca48559c-42da-44d5-a69c-f44e944411e4")
-		)
-		(pin "8"
-			(uuid "81a444d2-f479-474e-96e0-831ec170d0ca")
-		)
-		(pin "7"
-			(uuid "f26f94c0-179e-409a-a0e2-48c228b72562")
-		)
-		(pin "2"
-			(uuid "8d95db4a-35f0-4d5c-9ab6-81cdcd02fb82")
-		)
-		(instances
-			(project "dual flash adapter"
-				(path "/4778f287-7992-461b-b399-46e2f12f950a"
-					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "martonmiklos:Am29F040")
 		(at 194.31 67.945 0)
 		(unit 1)
@@ -7098,92 +7010,6 @@
 			(project ""
 				(path "/4778f287-7992-461b-b399-46e2f12f950a"
 					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x08")
-		(at 67.945 81.915 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "83c92838-e8c3-4603-b2dd-d25d80620bd3")
-		(property "Reference" "J3"
-			(at 66.675 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x08"
-			(at 66.675 78.74 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x08_P1.27mm_Vertical"
-			(at 67.945 81.915 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 67.945 81.915 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 67.945 81.915 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "71989f52-ee3f-4190-8bb1-ab72c47db6b6")
-		)
-		(pin "6"
-			(uuid "9e137791-f69b-4f6d-a4c1-f864ec34bbcb")
-		)
-		(pin "1"
-			(uuid "2001e171-07d4-4720-9cb6-73cd45fb969e")
-		)
-		(pin "4"
-			(uuid "7ef1bed1-0fc4-43a9-b627-35b90d31e190")
-		)
-		(pin "3"
-			(uuid "01ead060-84d6-446c-b787-cfaa50814ab6")
-		)
-		(pin "8"
-			(uuid "93e86070-6c88-4c0d-b28c-b0df517a8033")
-		)
-		(pin "7"
-			(uuid "9b94c6c5-aed8-47d8-8b43-adaa97f6f64a")
-		)
-		(pin "2"
-			(uuid "1eae2ee9-7419-4cfa-a430-57bcee150719")
-		)
-		(instances
-			(project "dual flash adapter"
-				(path "/4778f287-7992-461b-b399-46e2f12f950a"
-					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -7459,6 +7285,180 @@
 			(project "dual flash adapter"
 				(path "/4778f287-7992-461b-b399-46e2f12f950a"
 					(reference "#PWR5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x08")
+		(at 66.675 147.32 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "aa3495c5-2f1e-4475-84cf-cc8ad0339c98")
+		(property "Reference" "J4"
+			(at 67.945 150.495 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x08"
+			(at 67.945 153.035 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x08_P1.27mm_Vertical"
+			(at 66.675 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 66.675 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 66.675 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "25af3038-bd81-4b6e-9094-5745bd846382")
+		)
+		(pin "6"
+			(uuid "0d1bb4fe-3ac5-4fb0-95fe-07fbd2d6657a")
+		)
+		(pin "1"
+			(uuid "24afba55-777f-46c2-acd8-997129237fde")
+		)
+		(pin "4"
+			(uuid "b5ae1068-5286-46e3-b2b6-016e87e7252e")
+		)
+		(pin "3"
+			(uuid "c3ff007a-c95d-49c8-8d3c-bb26721f5f3e")
+		)
+		(pin "8"
+			(uuid "9bad3391-aabd-4e6b-90c4-fb1e10646271")
+		)
+		(pin "7"
+			(uuid "0204dea5-1eac-4dd4-a4d6-efe79b499706")
+		)
+		(pin "2"
+			(uuid "8236886c-f468-4d29-9370-7412dda8356e")
+		)
+		(instances
+			(project "dual flash adapter"
+				(path "/4778f287-7992-461b-b399-46e2f12f950a"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x08")
+		(at 100.33 118.745 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c4381c60-f9da-41d6-8de8-e6408b20b96d")
+		(property "Reference" "J6"
+			(at 102.87 118.7451 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x08"
+			(at 102.87 116.2051 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x08_P1.27mm_Vertical"
+			(at 100.33 118.745 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 100.33 118.745 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 100.33 118.745 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "c578474e-09f6-4092-9a06-a26e1d584e02")
+		)
+		(pin "6"
+			(uuid "f5373edd-804f-4bfb-9021-ebe4d900ed1d")
+		)
+		(pin "1"
+			(uuid "ff117c36-d562-431b-bb3d-a8e3491afae4")
+		)
+		(pin "4"
+			(uuid "f49b12fa-31ff-414a-b273-552d378436e7")
+		)
+		(pin "3"
+			(uuid "6407b6f9-dcd1-409d-84fe-1424f3e130f7")
+		)
+		(pin "8"
+			(uuid "ace58460-c64e-4518-afc2-7077531f5f29")
+		)
+		(pin "7"
+			(uuid "a1256ceb-7ded-406c-a476-071a878039e1")
+		)
+		(pin "2"
+			(uuid "9578449d-029c-45fb-ba16-f108251fa734")
+		)
+		(instances
+			(project "dual flash adapter"
+				(path "/4778f287-7992-461b-b399-46e2f12f950a"
+					(reference "J6")
 					(unit 1)
 				)
 			)

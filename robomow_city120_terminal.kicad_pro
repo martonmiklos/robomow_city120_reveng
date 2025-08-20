@@ -1,14 +1,6 @@
 {
   "board": {
     "3dviewports": [],
-    "design_settings": {
-      "defaults": {},
-      "diff_pair_dimensions": [],
-      "drc_exclusions": [],
-      "rules": {},
-      "track_widths": [],
-      "via_dimensions": []
-    },
     "ipc2581": {
       "dist": "",
       "distpn": "",
@@ -16,7 +8,6 @@
       "mfg": "",
       "mpn": ""
     },
-    "layer_pairs": [],
     "layer_presets": [],
     "viewports": []
   },
@@ -211,15 +202,10 @@
       "duplicate_sheet_names": "error",
       "endpoint_off_grid": "warning",
       "extra_units": "error",
-      "footprint_filter": "ignore",
-      "footprint_link_issues": "warning",
-      "four_way_junction": "ignore",
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
-      "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
-      "lib_symbol_mismatch": "warning",
       "missing_bidi_pin": "warning",
       "missing_input_pin": "warning",
       "missing_power_pin": "error",
@@ -232,15 +218,9 @@
       "pin_not_driven": "error",
       "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
-      "same_local_global_label": "warning",
-      "similar_label_and_power": "warning",
       "similar_labels": "warning",
-      "similar_power": "warning",
       "simulation_model_issue": "ignore",
-      "single_global_label": "ignore",
       "unannotated": "error",
-      "unconnected_wire_endpoint": "warning",
-      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -251,8 +231,8 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "ESB0100D City-120 mainboard.kicad_pro",
-    "version": 3
+    "filename": "robomow_city120_terminal.kicad_pro",
+    "version": 1
   },
   "net_settings": {
     "classes": [
@@ -267,7 +247,6 @@
         "microvia_drill": 0.1,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
         "via_diameter": 0.6,
@@ -276,7 +255,7 @@
       }
     ],
     "meta": {
-      "version": 4
+      "version": 3
     },
     "net_colors": null,
     "netclass_assignments": null,
@@ -352,7 +331,6 @@
       ],
       "filter_string": "",
       "group_symbols": true,
-      "include_excluded_from_bom": false,
       "name": "Grouped By Value",
       "sort_asc": true,
       "sort_field": "Reference"
@@ -385,9 +363,8 @@
       "version": 1
     },
     "net_format_name": "",
-    "page_layout_descr_file": "",
+    "page_layout_descr_file": "empty.kicad_wks",
     "plot_directory": "",
-    "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,
@@ -399,40 +376,8 @@
   },
   "sheets": [
     [
-      "1b7d23ce-0357-4769-ae9f-ddb2c39b8a27",
+      "a21b6ac1-20a9-4aa8-a836-2d008cde28cf",
       "Root"
-    ],
-    [
-      "59b29074-287a-4dc8-87aa-6a3bd29ed5ba",
-      "Encoder input"
-    ],
-    [
-      "febc67a9-aa2d-4ade-a4e6-250799c0648f",
-      "Drive motor shunt amp"
-    ],
-    [
-      "4eaf02a0-4570-4c23-9ba6-a2e0ba352d4c",
-      "H8S MCU"
-    ],
-    [
-      "62c08ad4-e951-41c5-8870-3408b773ffe0",
-      "Mow motor driver left"
-    ],
-    [
-      "ce624f23-37bc-4c79-877d-7124c0db9091",
-      "Mow motor driver mid"
-    ],
-    [
-      "f4272086-b28a-42dd-95ed-316bdb7573c8",
-      "Mow motor driver right"
-    ],
-    [
-      "4084f77a-b039-4ddd-be46-3b46a762a84e",
-      "Drive motors"
-    ],
-    [
-      "1e6c0cee-88e9-4852-bf9e-708222ba306d",
-      "Connector board ESB0021E"
     ]
   ],
   "text_variables": {}
